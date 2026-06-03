@@ -19,5 +19,6 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
 
         assertEquals(5, calculator.divide(10, 2));
+        assertEquals(10, calculator.multiply(5,2));
     }
 }
