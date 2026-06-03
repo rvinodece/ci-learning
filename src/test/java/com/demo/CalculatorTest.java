@@ -12,6 +12,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
 
         assertEquals(4, calculator.add(2, 2));
+        assertEquals(2, calculator.subtract(5,3));
 
     }
 }
