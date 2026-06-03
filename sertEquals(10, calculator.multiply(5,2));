@@ -1,0 +1,26 @@
+[1mdiff --git a/src/main/java/com/demo/Calculator.java b/src/main/java/com/demo/Calculator.java[m
+[1mindex b20bb3c..7f8c6be 100644[m
+[1m--- a/src/main/java/com/demo/Calculator.java[m
+[1m+++ b/src/main/java/com/demo/Calculator.java[m
+[36m@@ -8,4 +8,7 @@[m [mpublic class Calculator {[m
+     public int subtract(int a, int b) {[m
+         return a - b;[m
+     }[m
+[32m+[m[32m    public int multiply(int a, int b) {[m
+[32m+[m[32m        return a * b;[m
+[32m+[m[32m    }[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/src/test/java/com/demo/CalculatorTest.java b/src/test/java/com/demo/CalculatorTest.java[m
+[1mindex 48f25ba..fb7f7bf 100644[m
+[1m--- a/src/test/java/com/demo/CalculatorTest.java[m
+[1m+++ b/src/test/java/com/demo/CalculatorTest.java[m
+[36m@@ -13,6 +13,6 @@[m [mpublic class CalculatorTest {[m
+ [m
+         assertEquals(4, calculator.add(2, 2));[m
+         assertEquals(2, calculator.subtract(5,3));[m
+[31m-[m
+[32m+[m[32m        assertEquals(10, calculator.multiply(5,2));[m
+     }[m
+ }[m
+\ No newline at end of file[m
