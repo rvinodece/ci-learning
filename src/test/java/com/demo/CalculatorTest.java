@@ -13,6 +13,12 @@ public class CalculatorTest {
 
         assertEquals(4, calculator.add(2, 2));
         assertEquals(2, calculator.subtract(5,3));
+         }
+    @Test
+    void testDivide() {
+        Calculator calculator = new Calculator();
+
+        assertEquals(5, calculator.divide(10, 2));
         assertEquals(10, calculator.multiply(5,2));
     }
 }
